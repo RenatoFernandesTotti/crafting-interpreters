@@ -1,0 +1,27 @@
+{
+  "name": "javascript_lox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./dist/* &&  pkg ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  },
+  "bin": "src/index.ts",
+  "pkg": {
+    "scripts": "src/**/*.js",
+    "targets": [
+      "node18-linux-arm64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
